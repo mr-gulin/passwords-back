@@ -19,5 +19,3 @@ RUN apt-get install -y curl
 RUN pip install -r requirements.txt
 RUN chmod +x entrypoint.sh
 COPY . /app/
-
-RUN python manage.py collectstatic --no-input
