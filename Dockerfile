@@ -9,7 +9,7 @@ EXPOSE 8000
 WORKDIR /app
 
 COPY requirements.txt /app/
-#COPY entrypoint.sh /app/
+COPY entrypoint.sh /app/
 RUN apt-get update && \
     apt-get install --no-install-recommends -y gcc python3-dev default-libmysqlclient-dev build-essential
 RUN apt-get install -y apt-utils
