@@ -155,11 +155,12 @@ SIMPLE_JWT = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    "https://secrets.gulin.io"
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "http://"
-    "localhost:3000",
+    "http://localhost:3000",
+    "https://secrets.gulin.io"
 ]
 
 CORS_ALLOW_CREDENTIALS = True
