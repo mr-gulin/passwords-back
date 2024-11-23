@@ -6,12 +6,12 @@ from django.http import JsonResponse
 from django.middleware.csrf import get_token
 from rest_framework_simplejwt.tokens import RefreshToken, AccessToken
 
-from passwords.models import User
-from passwords.serializers import LoginSerializer
+from app.models import User
+from app.serializers import LoginSerializer
 from google.oauth2 import id_token
 from google.auth.transport import requests
 
-from passwords.settings import GOOGLE_CLIENT_ID
+from app.settings import GOOGLE_CLIENT_ID
 
 
 def validate_token(token):

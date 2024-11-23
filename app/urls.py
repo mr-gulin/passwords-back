@@ -1,5 +1,5 @@
 """
-URL configuration for passwords_backend project.
+URL configuration for secrets project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from passwords.views import csrf, LoginView, SignUpView, ProtectedView
+from app.views import csrf, LoginView, SignUpView, ProtectedView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
